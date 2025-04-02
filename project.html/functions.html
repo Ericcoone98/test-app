@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Functions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="function1.css">
+    <link rel="stylesheet" href="function2.css">
+    <link rel="stylesheet" href="function3.css">
+    <link rel="stylesheet" href="function4.css">
 </head>
 <body>
     <h1 id="pageTitle">Test Functions</h1>
@@ -46,24 +50,14 @@
 
     <!-- Test Function 4 -->
     <section id="function4">
-        <h2>Message Box</h2>
-        <!-- Form that sends user input to the specified email address -->
-        <form id="messageForm" action="mailto:Eric.coone1998@gmail.com" method="post" enctype="text/plain">
-            <!-- Input field for the user's name -->
-            <label for="name">Your Name:</label><br>
-            <input id="nameInput" type="text" name="name" placeholder="Enter your name" required><br><br>
-
-            <!-- Input field for the user's email -->
-            <label for="email">Your Email:</label><br>
-            <input id="emailInput" type="email" name="email" placeholder="Enter your email" required><br><br>
-
-            <!-- Textarea for the user's message -->
-            <label for="message">Your Message:</label><br>
-            <textarea id="messageInput" name="message" rows="5" placeholder="Enter your message" required></textarea><br><br>
-
-            <!-- Submit button to send the message -->
-            <button id="sendMessageButton" type="submit">Send Message</button>
-        </form>
+        <h2>Upload and Display Photo</h2>
+        <!-- File input for uploading photos -->
+        <input id="photoUpload" type="file" accept="image/*" onchange="displayUploadedPhoto()">
+        <!-- Placeholder for displaying the uploaded photo -->
+        <div id="photoDisplayContainer">
+            <p id="photoPlaceholder">No photo uploaded yet.</p>
+            <img id="uploadedPhoto" style="display: none;" alt="Uploaded Photo">
+        </div>
     </section>
 
     <script>
@@ -90,6 +84,27 @@
         const sliderValue = document.getElementById('colorSlider').value;
         const blueIntensity = sliderValue;
         document.body.style.backgroundColor = `rgb(255, 255, ${blueIntensity})`;
+    }
+
+    // Function to display the uploaded photo
+    function displayUploadedPhoto() {
+        const fileInput = document.getElementById('photoUpload');
+        const photoDisplay = document.getElementById('uploadedPhoto');
+        const photoPlaceholder = document.getElementById('photoPlaceholder');
+
+        // Check if a file is selected
+        if (fileInput.files && fileInput.files[0]) {
+            const reader = new FileReader();
+
+            // When the file is loaded, set it as the source of the image
+            reader.onload = function (e) {
+                photoDisplay.src = e.target.result;
+                photoDisplay.style.display = 'block'; // Show the image
+                photoPlaceholder.style.display = 'none'; // Hide the placeholder text
+            };
+
+            reader.readAsDataURL(fileInput.files[0]); // Read the file as a data URL
+        }
     }
     </script>
 </body>

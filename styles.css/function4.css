@@ -1,0 +1,13 @@
+/* Function 4: Upload and Display Photo */
+#photoDisplayContainer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#uploadedPhoto {
+    max-width: 100%;
+    max-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+}

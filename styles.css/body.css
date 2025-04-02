@@ -1,8 +1,9 @@
+/* Global Styles */
 body {
     max-width: fit-content;
     max-height: fit-content;
-    margin: 50PX auto; /* Center the body content */
-    text-align:left; /* Align text to the left */
+    margin: 50px auto; /* Center the body content */
+    text-align: left; /* Align text to the left */
     line-height: 1.6; /* Increase line height for readability */
     padding: 75px; /* Add padding around the body */
     background-color: rgb(240, 240, 240); /* Light background color */
@@ -11,12 +12,12 @@ body {
 }
 
 p {
-    margin:auto; /* Center the paragraph */
+    margin: auto; /* Center the paragraph */
     padding: 10px; /* Add padding around the paragraph */
-    text-align:left; /* Align text to the left */
+    text-align: left; /* Align text to the left */
     line-height: 1.6; /* Increase line height for readability */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the paragraph */
-    font-size: 20px; /* Font size for the paragraph */   
+    font-size: 20px; /* Font size for the paragraph */
 }
 
 h2 {
@@ -25,8 +26,7 @@ h2 {
     text-align: left; /* Align text to the left */
     line-height: 1.6; /* Increase line height for readability */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the heading */
-    font-size: 20px; /* Font size for the heading */   
-
+    font-size: 20px; /* Font size for the heading */
 }
 
 button {
@@ -274,6 +274,35 @@ contact-form {
 /* Hover Effect for Function and Logout Buttons */
 #button button:hover, 
 #button2 button:hover {
-    background-color: rgb(200, 200, 255);; /* Blue background on hover */
+    background-color: rgb(200, 200, 255); /* Blue background on hover */
     color: #fff; /* White text color on hover */
+}
+
+/* Header Styling */
+#header {
+    text-align: center; /* Center-align the header content */
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+
+/* Profile Photo Styling */
+#profilePhoto {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 2px solid #333; /* Optional: Add a border around the image */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+#photoDisplayContainer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#uploadedPhoto {
+    max-width: 100%;
+    max-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
 }

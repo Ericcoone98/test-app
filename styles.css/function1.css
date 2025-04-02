@@ -1,0 +1,18 @@
+/* Function 1: Create a Functioning Button */
+#alertButton, #toggleBackgroundButton {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#alertButton:hover, #toggleBackgroundButton:hover {
+    background-color: rgb(200, 200, 255);
+    color: #fff;
+}
