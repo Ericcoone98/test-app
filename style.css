@@ -1,0 +1,279 @@
+body {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 50PX auto; /* Center the body content */
+    text-align:left; /* Align text to the left */
+    line-height: 1.6; /* Increase line height for readability */
+    padding: 75px; /* Add padding around the body */
+    background-color: rgb(240, 240, 240); /* Light background color */
+    font-family: 'Courier New', Courier, monospace; /* Font style for the body */
+    font-size: 20px; /* Font size for the body */
+}
+
+p {
+    margin:auto; /* Center the paragraph */
+    padding: 10px; /* Add padding around the paragraph */
+    text-align:left; /* Align text to the left */
+    line-height: 1.6; /* Increase line height for readability */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the paragraph */
+    font-size: 20px; /* Font size for the paragraph */   
+}
+
+h2 {
+    margin: auto; /* Center the heading */
+    padding: 10px; /* Add padding around the heading */
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Increase line height for readability */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the heading */
+    font-size: 20px; /* Font size for the heading */   
+
+}
+
+button {
+    background-color: rgb(240, 240, 240); /* Light background color for buttons */
+    color: rgb(34, 34, 36); /* Text color for buttons */
+    border: none; /* Remove border from buttons */
+    padding: 10px 20px; /* Add padding around buttons */
+    text-align: center; /* Center text in buttons */
+    text-decoration: none; /* Remove underline from button text */
+    display: inline-block; /* Display buttons inline */
+    font-size: 20px; /* Font size for buttons */
+    margin: 4px 2px; /* Margin around buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+#button2 {
+    background-color: rgb(240, 240, 240); /* Light background color for buttons */
+    color: rgb(34, 34, 36); /* Text color for buttons */
+    border: 10px; /* Remove border from buttons */
+    padding: 10px 20px; /* Add padding around buttons */
+    text-align: left; /* Center text in buttons */
+    text-decoration: none; /* Remove underline from button text */
+    display: inline-block; /* Display buttons inline */
+    font-size: 20px; /* Font size for buttons */
+    margin: 4px 2px; /* Margin around buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Add hover effect for buttons */
+button:hover {
+    background-color: rgb(200, 200, 255); /* Change background color on hover */
+    color: white; /* Optional: Change text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+
+/* General Button Styling */
+button, 
+#button button, 
+#button2 button, 
+#navbar ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the heading */
+    text-decoration: none; /* Remove underline from text */
+    color: #333; /* Dark gray text color */
+    padding: 10px 15px; /* Add padding around the button */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #eaeaea; /* Light background for buttons and links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    font-size: 20px; /* Standard font size */
+    font-weight: bold; /* Make text bold */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Ensure buttons and links are inline-block */
+}
+
+/* Hover Effect for Buttons and Navbar Links */
+button:hover, 
+#button button:hover, 
+#button2 button:hover, 
+#navbar ul li a:hover {
+    background-color: rgb(200, 200, 255); /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #f4f4f4; /* Light gray background for the navbar */
+    padding: 10px 20px; /* Add padding around the navbar */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 15px; /* Add spacing between items */
+    border-radius: 10px; /* Rounded corners for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar List Styling */
+#navbar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the list items display horizontally */
+    gap: 10px; /* Add spacing between list items */
+}
+
+/* Navbar List Items */
+#navbar ul li {
+    display: inline; /* Ensure list items are inline */
+}
+
+/* Navbar Links */
+#navbar ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font style for the heading */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark gray text color */
+    padding: 8px 12px; /* Adjust padding for better fit */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #eaeaea; /* Light background for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    font-size: 16px; /* Adjust font size for better fit */
+    font-weight: bold; /* Make links bold */
+    display: inline-block; /* Ensure links are inline-block */
+}
+
+/* Navbar Links Hover Effect */
+#navbar ul li a:hover {
+    background-color:  rgb(200, 200, 255); /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Responsive Navbar for Smaller Screens */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px; /* Adjust spacing between items */
+    }
+
+    #navbar ul {
+        flex-direction: column; /* Stack list items vertically */
+        gap: 10px; /* Adjust spacing between list items */
+    }
+}
+
+contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add spacing between items */
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: auto; /* Center the form */
+}
+
+/* Contact Section Styling */
+#contact {
+    max-width: 600px auto; /* Set a maximum width for the contact section */
+    margin: 20px auto; /* Center the section on the page */
+    padding: 100px; /* Add padding around the section */
+    background-color: #ffffff; /* White background for the contact section */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+}
+
+/* Contact Heading */
+#contact h2 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-align:left;
+}
+
+/* Contact Paragraph */
+#contact p {
+    font-size: 16px; /* Standard font size for the paragraph */
+    color: #555; /* Medium gray text color */
+    line-height: 1.5; /* Increase line height for readability */
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+    text-align: left; /* Align text to the left */
+}
+
+/* Contact Links */
+#contact a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Add spacing between form elements */
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: left; /* Align text and elements to the left */
+}
+
+/* Form Labels */
+#contact-form label {
+    font-weight: bold; /* Make labels bold */
+    text-align: left; /* Align labels to the left */
+    margin-bottom: 5px; /* Add spacing below labels */
+}
+
+/* Form Inputs and Textarea */
+#contact-form input,
+#contact-form textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Add padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Standard font size */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: left; /* Align text inside inputs to the left */
+}
+
+/* Form Inputs and Textarea Focus */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle shadow on focus */
+}
+
+/* Submit Button */
+#contact-form button {
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Add padding around the button */
+    font-size: 16px; /* Standard font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center-align text inside the button */
+}
+
+/* Submit Button Hover */
+#contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Function and Logout Buttons Styling */
+#button button, 
+#button2 button {
+    text-decoration: none; /* Remove underline from text */
+    color: #333; /* Dark gray text color */
+    padding: 10px 15px; /* Add padding around the button */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #eaeaea; /* Light background for buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    font-size: 16px; /* Standard font size */
+    font-weight: bold; /* Make text bold */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Ensure buttons are inline-block */
+}
+
+/* Hover Effect for Function and Logout Buttons */
+#button button:hover, 
+#button2 button:hover {
+    background-color: rgb(200, 200, 255);; /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+}

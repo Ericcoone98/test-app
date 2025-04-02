@@ -12,42 +12,72 @@
     <p>Welcome, Eric Coone!</p>
 
     <!-- Logout Button -->
-    <div id="logout">
+    <div id="button">
         <button onclick="logout()">Logout</button>
     </div>
     <!--navbar-->
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li id="home"><a href="index.html">Home</a></li>
-            <li id="about"><a href="about.html">About</a></li>
-            <li id="contact"><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="functions.html">Functions</a></li>
         </ul>
     </nav>
 
     <!--home page-->
-    <div id="home-page">
+    <div id="home">
         <h2>Home Page</h2>
         <p>Welcome to the home page of the test app. This is a simple app that demonstrates the use of HTML, CSS, and JavaScript.</p>
     </div>
 
     <!--about page-->
-    <div id="about-page">
+    <div id="about">
         <h2>About Me</h2>
         <p>
-                I am currently a Collision Technician, I started learning to code as a hobby with the goal to 
+            I am currently a Collision Technician, I started learning to code as a hobby with the goal to 
             use these skills to create tools for the automotive industry, and to eventually transition into a
-            career in software development. 
-            <br>
-                This web page is a simple test application to help understand basic 
+            career in software development. <br><br>
+        
+            This web page is a simple test application to help understand basic 
             functions such as creating a log in and register page, learning how to use JavaScript to create
             a simple web application, the use of Ai (github copilot) to help with the coding process, 
             learn how to host a webpage with vercel, use supabase to create a database, and to learn how to
-            use github for code management.
-            <br>
-                My years in automotive repair have taught me the importance of attention to detail, how to problem solve,
-                and how to search for resources when problems have little to no information available. 
+            use github for code management.<br><br>
+        
+            My years in automotive repair have taught me the importance of attention to detail, how to problem solve,
+            and how to search for resources when problems have little to no information available; I am working towardss
+            combining these skills with my new coding skills to create tools that will help the automotive industry 
+            with customer service, and to help technicians have access to the information they need to do their jobs in
+            a fast and efficient manner.<br><br>
+        
+            My future plans include creating a lead generation tool to create side work, a tool to help mom and pop shops 
+            have better communication with customers, create software that makes the estimating process faster and more efficient, 
+            and to eventually create a tool to help technicians find resources and guides all in one place.<br><br>
+        
+            outside of the automotive industry I am interested in creating software that help others like myself
+            find side work and creates leads for small businesses, and to create software that helps people find 
+            returning clients. 
         </p>
+    </div>
+
+    
+        <h2>Test Functions</h2>
+        <p>
+            This is a test function to test the JavaScript functions that I have created. 
+        </p>
+        <div id="button2">
+        <!-- Updated button to redirect to functions.html -->
+        <button onclick="window.location.href='functions.html';">Test Functions</button>
+    </div>
+
+   
+
+    <!-- Footer with copyright -->
+    <footer>
+        <p>&copy; 2025 Eric Coone. All rights reserved.</p>
+    </footer>
 
     <script src="app.js"></script>
+    
 </body>
 </html>

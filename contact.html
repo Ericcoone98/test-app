@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            Phone Number: (972) 369-4261 <br>
+            Email: <a href="mailto:Eric.coone1998@gmail.com">Eric.coone1998@gmail.com</a> <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/eric-coone-844956342" target="_blank">LinkedIn</a>
+        </p>
+
+        <form id="contact-form" action="mailto:Eric.coone1998@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Return to Home Button -->
+        <button id="returnHomeButton" onclick="window.location.href='index.html';">Return to Home</button>
+    </div>
+</body>
+</html>
